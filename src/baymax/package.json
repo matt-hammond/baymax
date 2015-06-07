@@ -1,0 +1,9 @@
+{
+  "version": "1.0.0",
+  "name": "baymax",
+  "private": true,
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-sass": "1.3.2"
+  }
+}

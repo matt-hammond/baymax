@@ -1,0 +1,1681 @@
+﻿
+
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>GOV.UK elements</title>
+
+    <script type="text/javascript">
+      (function(){if(navigator.userAgent.match(/IEMobile\/10\.0/)){var d=document,c="appendChild",a=d.createElement("style");a[c](d.createTextNode("@-ms-viewport{width:auto!important}"));d.getElementsByTagName("head")[0][c](a);}})();
+    </script>
+
+    <!--[if gt IE 8]><!-->
+    <link href="/public/stylesheets/govuk-template.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><!--<![endif]-->
+    <!--[if IE 6]><link href="/public/stylesheets/govuk-template-ie6.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="/public/stylesheets/govuk-template-ie7.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="/public/stylesheets/govuk-template-ie8.css?0.12.0" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+
+    <link href="/public/stylesheets/govuk-template-print.css?0.12.0" media="print" rel="stylesheet" type="text/css" />
+
+    <!--[if IE 8]>
+    <script type="text/javascript">
+      (function(){if(window.opera){return;}
+       setTimeout(function(){var a=document,g,b={families:(g=
+       ["nta"]),urls:["/public/stylesheets/fonts-ie8.css?0.12.0"]},
+       c="/public/javascripts/vendor/goog/webfont-debug.js?0.12.0",d="script",
+       e=a.createElement(d),f=a.getElementsByTagName(d)[0],h=g.length;WebFontConfig
+       ={custom:b},e.src=c,f.parentNode.insertBefore(e,f);for(;h=h-1;a.documentElement
+       .className+=' wf-'+g[h].replace(/\s/g,'').toLowerCase()+'-n4-loading');},0)
+      })()
+    </script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <link href="/public/stylesheets/fonts.css?0.12.0" media="all" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+      <script src="/public/javascripts/ie.js?0.12.0" type="text/javascript"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/public/images/favicon.ico?0.12.0" type="image/x-icon" />
+
+    <!-- Size for iPad and iPad mini (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/public/images/apple-touch-icon-152x152.png?0.12.0">
+    <!-- Size for iPhone and iPod touch (high resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/public/images/apple-touch-icon-120x120.png?0.12.0">
+    <!-- Size for iPad 2 and iPad mini (standard resolution) -->
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/public/images/apple-touch-icon-76x76.png?0.12.0">
+    <!-- Default non-defined size, also used for Android 2.1+ devices -->
+    <link rel="apple-touch-icon-precomposed" href="/public/images/apple-touch-icon-60x60.png?0.12.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="/public/images/opengraph-image.png?0.12.0">
+
+    <!--[if gt IE 8]><!-->
+    <link href="/public/stylesheets/elements-page.css" rel="stylesheet" type="text/css"><!--<![endif]-->
+    <!--[if IE 6]><link href="/stylesheets/stylesheets/elements-page-ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 7]><link href="/stylesheets/stylesheets/elements-page-ie7.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <!--[if IE 8]><link href="/stylesheets/stylesheets/elements-page-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49672752-1', 'govuk-elements.herokuapp.com');
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body class="">
+    <script type="text/javascript">document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+
+
+    <div id="skiplink-container">
+        <div>
+            <a href="#content" class="skiplink">Skip to main content</a>
+        </div>
+    </div>
+
+    <div id="global-cookie-message">
+        <div class="outer-block">
+            <div class="inner-block">
+
+                <p>
+                    GOV.UK uses cookies to make the site simpler. <a href="https://www.gov.uk/help/cookies">Find out more about cookies</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <!--end global-cookie-message-->
+
+
+    <header role="banner" id="global-header" class="with-proposition">
+        <div class="header-wrapper">
+            <div class="header-global">
+                <div class="header-logo">
+                    <a href="https://www.gov.uk/" title="Go to the GOV.UK homepage" id="logo" class="content">
+                        <img src="/public/images/gov.uk_logotype_crown.png?0.12.0" width="35" height="31" alt=""> GOV.UK
+                    </a>
+                </div>
+            </div>
+            <div class="header-proposition">
+                <div class="content">
+                    <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+                    <nav id="proposition-menu">
+                        <a href="https://www.gov.uk/service-manual" id="proposition-name">Government Service Design Manual</a>
+                        <ul id="proposition-links">
+                            <li><a href="https://www.gov.uk/service-manual/digital-by-default">Digital by Default Service Standard</a></li>
+                            <li><a href="https://www.gov.uk/service-manual/start">Start using the manual</a></li>
+                            <li><a href="https://www.gov.uk/contact/govuk">Feedback</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+
+
+    <div id="global-header-bar">
+        <div class="inner-block">
+            <div class="header-bar"></div>
+        </div>
+    </div>
+    <!--end global-header-bar-->
+
+
+    <main id="content" role="main">
+
+        <div class="phase-banner">
+            <p>
+                <strong class="phase-tag">ALPHA</strong>
+                <span>This is a new service – your <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2">feedback</a> will help us to improve it.</span>
+            </p>
+        </div>
+
+        <div id="global-breadcrumb" class="header-context">
+            <nav role="navigation">
+                <ol class="group">
+                    <li><a href="https://www.gov.uk/service-manual/">Home</a></li>
+                    <li><a href="https://www.gov.uk/service-manual/user-centred-design">User-centred design</a></li>
+                </ol>
+            </nav>
+        </div>  <header class="page-header group">
+            <div class="hgroup">
+                <h1>GOV.UK elements</h1>
+                <h2 class="subtitle">Layout, typography, colour, images, icons, forms, buttons and data</h2>
+            </div>
+        </header>
+
+        <div class="text">
+
+            <p class="lede">
+                This guide explains how to make your service look consistent with the rest of GOV.UK.
+            </p>
+
+            <ol class="list-number">
+                <li><a href="#guide-layout">Layout</a></li>
+                <li><a href="#guide-typography">Typography</a></li>
+                <li><a href="#guide-colour">Colour</a></li>
+                <li><a href="#guide-icons-images">Icons and images</a></li>
+                <li><a href="#guide-data">Data</a></li>
+                <li><a href="#guide-forms">Forms</a></li>
+                <li><a href="#guide-buttons">Buttons</a></li>
+                <li><a href="#guide-errors">Errors and validation</a></li>
+                <li><a href="#guide-alpha-beta">Alpha and beta banners</a></li>
+            </ol>
+
+            <h2 class="heading-medium">Looking for the styles?</h2>
+            <p>
+                The Sass files for <a href="https://github.com/alphagov/govuk_elements/tree/master/public/sass" rel="external">all the examples in this page can be found on GitHub</a>.
+            </p>
+
+            <h2 class="heading-medium">Looking for the HTML?</h2>
+            <p>
+                The HTML snippets can be found in the <a href="/snippets/">GOV.UK elements snippets page</a>.
+            </p>
+
+        </div>
+
+        <div id="guide-layout">
+
+            <h2 class="heading-large heading-with-border">1. Layout</h2>
+            <div class="text">
+                <p>
+                    Use white space to create a visual hierarchy on the page. Design for small screens first using a single column layout.
+                </p>
+                <p>
+                    The default maximum page width is 1020px, but go wider if the content requires it.
+                </p>
+                <p>
+                    Optimise for different screen sizes, but don’t make assumptions about what devices people are using.
+                </p>
+            </div>
+
+            <ul>
+                <li><a href="/examples/grid-layout/">See an example of GOV.UK grid layout</a></li>
+            </ul>
+
+            <h3 class="heading-medium" id="layout-spacing">Spacing</h3>
+            <ul class="list-bullet text">
+                <li>spacing between elements is usually 5px, 10px, 15px or multiples of 15px</li>
+                <li>gutters are 15px for smaller screens and 30px for larger screens</li>
+            </ul>
+
+            <div class="example example-images">
+                <div class="grid-row">
+                    <div class="column-half">
+                        <img src="/public/images/examples/15px-gutter-example.png" alt="15px gutter example">
+                    </div>
+                    <div class="column-half">
+                        <img src="/public/images/examples/30px-gutter-example.png" alt="30px gutter example">
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="layout-grid-unit-proportions">Grid unit proportions</h3>
+            <ul class="list-bullet text">
+                <li>introduce columns as the content requires it – base column ratios on halves, thirds or quarters of the page width</li>
+                <li>for screen breakpoints use media queries &ndash; find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_conditionals.scss">_conditionals.scss</a> file</li>
+            </ul>
+
+            <h4 class="heading-small">Halves</h4>
+            <div class="example example-grid">
+                <div class="grid-row">
+                    <div class="column-half">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-half">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="heading-small">Thirds</h4>
+            <div class="example example-grid">
+                <div class="grid-row">
+                    <div class="column-third">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-third">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-third">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="example example-grid">
+                <div class="grid-row">
+                    <div class="column-two-thirds">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-third">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="heading-small">Quarters</h4>
+            <div class="example example-grid">
+                <div class="grid-row">
+                    <div class="column-quarter">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-quarter">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-quarter">
+                        <p>Content</p>
+                    </div>
+                    <div class="column-quarter">
+                        <p>Content</p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2#:h=Layout" rel="external">Discuss layout on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-layout -->
+
+        <div id="guide-typography">
+
+            <h2 class="heading-large heading-with-border">2. Typography</h2>
+            <p class="text">
+                Use the GDS Transport Website font in Light and Bold. It's licensed for use on the GOV.UK domains only. For services publicly available on different domains, use an alternative typeface like Arial. You can find common font colours in the <a href="#guide-colour">colour palette</a>.
+            </p>
+
+            <ul>
+                <li><a href="/examples/typography/">See an example of GOV.UK typography</a></li>
+                <li><a href="https://gds.blog.gov.uk/2012/07/05/a-few-notes-on-typography/">Read a blog post about developing the GOV.UK typeface</a></li>
+            </ul>
+
+            <h3 class="heading-medium" id="typography-headings">
+                Headings
+            </h3>
+
+            <ul class="list-bullet text">
+                <li>use GDS Transport Website Bold</li>
+                <li>use sentence case for headings</li>
+                <li>use headings consistently to create a clear hierarchy</li>
+            </ul>
+
+            <div class="example">
+                <h1 class="heading-xlarge">A <em class="highlight">48px Bold</em> heading</h1>
+
+                <h2 class="heading-large">A <em class="highlight">36px Bold</em> heading</h2>
+
+                <h3 class="heading-medium">A <em class="highlight">24px Bold</em> heading</h3>
+
+                <h4 class="heading-small">A <em class="highlight">19px Bold</em> heading</h4>
+            </div>
+
+            <h3 class="heading-medium" id="typography-lead-paragraph">
+                Lead paragraph
+            </h3>
+            <p>
+                There should only be one lead paragraph per page.
+            </p>
+
+            <div class="example">
+                <div class="text">
+                    <p class="lede">
+                        A <em class="highlight">24px</em> lead paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+
+                    <p>
+                        A <em class="highlight">19px</em> body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="typography-body-copy">
+                Body copy
+            </h3>
+
+            <ul class="list-bullet text">
+                <li>use GDS Transport Website Light</li>
+                <li>avoid using bold and italics</li>
+                <li>use 19px for body copy &ndash; 16px for smaller screens</li>
+                <li>use smaller sizes only if there's a user need (eg 16px, 14px, 12px)</li>
+                <li>make sure lines of text don't exceed 75 characters, as they become harder to read beyond that point</li>
+                <li>for example, on this page &ndash; text blocks are two-thirds of the page width</li>
+            </ul>
+
+            <div class="example">
+                <div class="text">
+                    <p>
+                        A <em class="highlight">19px</em> body copy paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+
+                    <p class="font-xsmall">
+                        A <em class="highlight">16px</em> supporting text paragraph. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec ullamcorper nulla non metus auctor fringilla.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="typography-links">Links</h3>
+            <ul class="list-bullet text">
+                <li>links within body copy should be blue and underlined</li>
+                <li>links without surrounding text should not have a full stop at the end</li>
+                <li>link colours can be found in the <a href="#guide-colour">colour palette</a></li>
+            </ul>
+
+            <div class="example">
+                <div class="text">
+                    <p>
+                        <a href="#">A 19px link without surrounding text</a>
+                    </p>
+
+                    <p>
+                        <a href="#">A 19px body copy link</a>. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+
+                    <p>
+                        <a href="#" rel="external">A 19px body copy external link.</a> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="typography-lists">Lists</h3>
+            <p class="text">
+                List items start with a lowercase letter and have no full stop at the end.
+            </p>
+            <div class="example">
+                <ul class="list-bullet">
+                    <li>here is a bulleted list</li>
+                    <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+                    <li>vestibulum id ligula porta felis euismod semper</li>
+                    <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+                </ul>
+
+                <ol class="list-number">
+                    <li>here is a numbered list</li>
+                    <li>vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor</li>
+                    <li>vestibulum id ligula porta felis euismod semper</li>
+                    <li>integer posuere erat a ante venenatis dapibus posuere velit aliquet</li>
+                </ol>
+            </div>
+
+            <h3 class="heading-medium" id="typography-inset-text">Inset text</h3>
+            <p class="text">
+                Use bordered inset text to draw attention to important content on the page.
+            </p>
+            <p class="text">
+                <a href="https://www.gov.uk/holiday-entitlement-rights">See an example of inset text on GOV.UK</a>
+            </p>
+            <div class="example">
+                <div class="text">
+                    <div class="panel-indent">
+                        <p>
+                            It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2#:h=Typography" rel="external">Discuss typography on our Hackpad</a>
+            </p>
+
+            <h3 class="heading-medium" id="typography-hidden-text">Hidden text (progressive disclosure)</h3>
+            <p class="text">
+                Use this to make your page easier to scan,
+                only showing contextual information when required.
+            </p>
+            <p class="text">
+                Click on "Help with nationality" to see how this works.
+            </p>
+            <div class="example">
+                <details>
+                    <summary><span class="summary">Help with nationality</span></summary>
+                    <div class="panel-indent">
+                        <p>
+                            If you’re not sure about your nationality, try to find out from an official document like a passport or national ID card.
+                        </p>
+                        <p>
+                            We need to know your nationality so we can work out which elections you’re entitled to vote in. If you can’t provide your nationality, you’ll have to send copies of identity documents through the post.
+                        </p>
+                    </div>
+                </details>
+            </div>
+            <p>
+                <a href="https://designpatterns.hackpad.com/Progressive-disclosure-mi03xhbZQpu" rel="external">Discuss progressive disclosure on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-typography -->
+
+        <div id="guide-colour">
+
+            <h2 class="heading-large heading-with-border">3. Colour</h2>
+            <p class="text">
+                Always use the GOV.UK colour palette.
+            </p>
+
+            <h3 class="heading-medium" id="colour-contrast">Colour contrast</h3>
+            <p class="text">
+                The colour contrast ratio for text and interactive elements should be at least 4.5:1 <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" rel="external">as recommended by the W3C</a>. Test your service to meet this standard.
+            </p>
+
+            <h3 class="heading-medium" id="colour-sass-variables">Sass variables</h3>
+            <p class="text">
+                Use Sass variables in case colour values need to be updated &ndash; find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_colours.scss">colours.scss</a> file.
+            </p>
+
+            <div class="example">
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Text</h4>
+
+                    <div class="swatch swatch-text-colour"></div>
+                    <ul>
+                        <li><b>#0B0C0C</b></li>
+                        <li>$text-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-text-secondary"></div>
+                    <ul>
+                        <li><b>#6F777B</b></li>
+                        <li>$secondary-text-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-page-colour"></div>
+
+                    <ul>
+                        <li><b>#FFFFFF</b></li>
+                        <li>$page-colour</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Links</h4>
+
+                    <div class="swatch swatch-link-colour"></div>
+                    <ul>
+                        <li><b>#005ea5</b></li>
+                        <li>$link-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-link-colour-hover"></div>
+                    <ul>
+                        <li><b>#2e8aca</b></li>
+                        <li>$link-hover-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-link-colour-visited"></div>
+                    <ul>
+                        <li><b>#4c2c92</b></li>
+                        <li>$link-visited-colour</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Backgrounds</h4>
+
+                    <div class="swatch swatch-border-colour"></div>
+                    <ul>
+                        <li><b>#BFC1C3</b></li>
+                        <li>$border-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-panel-colour"></div>
+                    <ul>
+                        <li><b>#DEE0E2</b></li>
+                        <li>$panel-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-highlight-colour"></div>
+                    <ul>
+                        <li><b>#F8F8F8</b></li>
+                        <li>$highlight-colour</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Buttons</h4>
+
+                    <div class="swatch swatch-button-colour"></div>
+                    <ul>
+                        <li><b>#00823B</b></li>
+                        <li>$button-colour</li>
+                    </ul>
+
+                    <div class="swatch swatch-green"></div>
+                    <ul>
+                        <li><b>#006435</b></li>
+                        <li>$green (hover colour)</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Focus</h4>
+                    <div class="swatch swatch-yellow"></div>
+                    <ul>
+                        <li><b>#FFBF47</b></li>
+                        <li>$focus-colour</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="colour-status-colours">Status colours</h3>
+            <div class="example">
+
+                <div class="swatch-wrapper">
+
+                    <div class="swatch swatch-alpha"></div>
+                    <ul>
+                        <li><b>#d53880</b></li>
+                        <li>$alpha-colour</li>
+                    </ul>
+
+                </div>
+                <div class="swatch-wrapper">
+
+                    <div class="swatch swatch-beta"></div>
+                    <ul>
+                        <li><b>#f47738</b></li>
+                        <li>$beta-colour</li>
+                    </ul>
+
+                </div>
+                <div class="swatch-wrapper">
+
+                    <div class="swatch swatch-discovery"></div>
+                    <ul>
+                        <li><b>#912b88</b></li>
+                        <li>$discovery-colour</li>
+                    </ul>
+
+                </div>
+                <div class="swatch-wrapper">
+
+                    <div class="swatch swatch-live"></div>
+                    <ul>
+                        <li><b>#85994b</b></li>
+                        <li>$live-colour</li>
+                    </ul>
+
+                </div>
+                <div class="swatch-wrapper">
+
+                    <div class="swatch swatch-error"></div>
+                    <ul>
+                        <li><b>#af1324</b></li>
+                        <li>$error-colour</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <h3 class="heading-medium" id="colour-greyscale-palette">Greyscale palette</h3>
+            <div class="example">
+                <div class="swatch-wrapper">
+                    <div class="swatch swatch-black"></div>
+                    <ul>
+                        <li><b>#0B0C0C</b></li>
+                        <li>$black</li>
+                    </ul>
+                </div>
+                <div class="swatch-wrapper">
+                    <div class="swatch swatch-grey-1"></div>
+                    <ul>
+                        <li><b>#6F777B</b></li>
+                        <li>$grey-1</li>
+                    </ul>
+                </div>
+                <div class="swatch-wrapper">
+                    <div class="swatch swatch-grey-2"></div>
+                    <ul>
+                        <li><b>#BFC1C3</b></li>
+                        <li>$grey-2</li>
+                    </ul>
+                </div>
+                <div class="swatch-wrapper">
+                    <div class="swatch swatch-grey-3"></div>
+                    <ul>
+                        <li><b>#DEE0E2</b></li>
+                        <li>$grey-3</li>
+                    </ul>
+                </div>
+                <div class="swatch-wrapper">
+                    <div class="swatch swatch-grey-4"></div>
+                    <ul>
+                        <li><b>#F8F8F8</b></li>
+                        <li>$grey-4</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="colour-extended-palette">Extended palette</h3>
+            <ul class="list-bullet text">
+                <li>used for graphs and supporting material</li>
+                <li>for tints of the extended palette use 50% or 25%</li>
+                <li>
+                    for departmental colours
+                    &ndash; find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_colours.scss">colours.scss file</a>
+                </li>
+            </ul>
+            <p>
+                <a href="https://www.gov.uk/performance/carers-allowance">See an example of the extended colour palette on GOV.UK</a>
+            </p>
+
+            <div class="example">
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Purple</h4>
+
+                    <div class="swatch swatch-purple"></div>
+                    <ul>
+                        <li><b>#2e358b</b></li>
+                        <li>$purple</li>
+                    </ul>
+
+                    <h4 class="heading-small">Mauve</h4>
+
+                    <div class="swatch swatch-mauve"></div>
+                    <ul>
+                        <li><b>#6f72af</b></li>
+                        <li>$mauve</li>
+                    </ul>
+
+                    <h4 class="heading-small">Fuschia</h4>
+
+                    <div class="swatch swatch-fuschia"></div>
+                    <ul>
+                        <li><b>#912b88</b></li>
+                        <li>$fuschia</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Pink</h4>
+
+                    <div class="swatch swatch-pink"></div>
+                    <ul>
+                        <li><b>#d53880</b></li>
+                        <li>$pink</li>
+                    </ul>
+
+                    <h4 class="heading-small">Baby pink</h4>
+
+                    <div class="swatch swatch-baby-pink"></div>
+                    <ul>
+                        <li><b>#f499be</b></li>
+                        <li>$baby-pink</li>
+                    </ul>
+
+                    <h4 class="heading-small">Red</h4>
+
+                    <div class="swatch swatch-red"></div>
+                    <ul>
+                        <li><b>#b10e1e</b></li>
+                        <li>$red</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Mellow red</h4>
+
+                    <div class="swatch swatch-mellow-red"></div>
+                    <ul>
+                        <li><b>#df3034</b></li>
+                        <li>$mellow-red</li>
+                    </ul>
+
+                    <h4 class="heading-small">Orange</h4>
+
+                    <div class="swatch swatch-orange"></div>
+                    <ul>
+                        <li><b>#f47738</b></li>
+                        <li>$orange</li>
+                    </ul>
+
+                    <h4 class="heading-small">Brown</h4>
+
+                    <div class="swatch swatch-brown"></div>
+                    <ul>
+                        <li><b>#b58840</b></li>
+                        <li>$brown</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Yellow</h4>
+
+                    <div class="swatch swatch-yellow"></div>
+                    <ul>
+                        <li><b>#ffbf47</b></li>
+                        <li>$yellow</li>
+                    </ul>
+
+                    <h4 class="heading-small">Green</h4>
+
+                    <div class="swatch swatch-green"></div>
+                    <ul>
+                        <li><b>#006435</b></li>
+                        <li>$green</li>
+                    </ul>
+
+                    <h4 class="heading-small">Grass green</h4>
+
+                    <div class="swatch swatch-grass-green"></div>
+                    <ul>
+                        <li><b>#85994b</b></li>
+                        <li>$grass-green</li>
+                    </ul>
+                </div>
+
+                <div class="swatch-wrapper">
+                    <h4 class="heading-small">Turquoise</h4>
+
+                    <div class="swatch swatch-turquoise"></div>
+                    <ul>
+                        <li><b>#28a197</b></li>
+                        <li>$turquoise</li>
+                    </ul>
+
+                    <h4 class="heading-small">Light blue</h4>
+
+                    <div class="swatch swatch-light-blue"></div>
+                    <ul>
+                        <li><b>#2b8cc4</b></li>
+                        <li>$light-blue</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Colour-PDuGV42pJqx" rel="external">Discuss colour on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-colour -->
+
+        <div id="guide-icons-images">
+
+            <h2 class="heading-large heading-with-border">4. Icons and images</h2>
+            <p class="text">
+                Avoid unnecessary decoration - only use icons and images if there's a real user need.
+            </p>
+            <ul class="text">
+                <li><a href="https://www.gov.uk/government/history">See an example of image usage on GOV.UK</a></li>
+            </ul>
+
+            <h3 class="heading-medium" id="icons">Icons</h3>
+            <ul class="list-bullet text">
+                <li>
+                    if icons are needed ensure they are clear, simple and accompanied by relevant text
+                </li>
+                <li>
+                    don’t hide functionality under icons
+                </li>
+            </ul>
+
+            <p class="text">
+                GOV.UK standard icons are provided, as well as organisation crests and media player icons &ndash; find these in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/tree/master/images">images folder</a>.
+            </p>
+
+            <h3 class="heading-medium" id="images">Images</h3>
+            <p>
+                If images are needed they should be landscape, 3:2 aspect ratio.
+            </p>
+
+            <div class="example example-images">
+                <div class="grid-row">
+                    <div class="column-half">
+                        <img src="/public/images/examples/3by2.jpg" alt="3:2">
+                    </div>
+                    <div class="column-half">
+                        <img src="/public/images/examples/pm.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Iconography-UoIkbsbqgll" rel="external">Discuss icons on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-icons-images -->
+
+        <div id="guide-data">
+
+            <h2 class="heading-large heading-with-border">5. Data</h2>
+            <p class="text">
+                Data is recommended as an alternative to using images.
+            </p>
+
+            <ul>
+                <li><a href="https://www.gov.uk/service-manual/user-centered-design/data-visualisation.html">Read more about GOV.UK data visualisation</a></li>
+                <li><a href="https://www.gov.uk/government/how-government-works#how-governement-is-run">See an example of data on GOV.UK</a></li>
+                <li><a href="https://www.gov.uk/performance/tax-disc">See an example of data on the GOV.UK Performance Platform</a></li>
+            </ul>
+
+            <h3 class="heading-medium" id="data-visualisation">Data visualisation</h3>
+            <p class="text">
+                For screen readers, ensure the data value appears first so it makes sense when read aloud.
+            </p>
+
+            <div class="example">
+                <div class="grid-row">
+                    <div class="column-half">
+
+                        <div class="data">
+                            <h2 class="bold-xxlarge">24</h2>
+                            <p class="bold-xsmall">Ministerial departments</p>
+                        </div>
+
+                    </div>
+                    <div class="column-half">
+
+                        <div class="data">
+                            <h2 class="bold-xxlarge">80px</h2>
+                            <p class="bold-xsmall">16px</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="grid-row">
+                    <div class="column-half">
+
+                        <div class="data">
+                            <h2 class="bold-xlarge">56/154</h2>
+                            <p class="bold-xsmall">on GOV.UK</p>
+                        </div>
+
+                    </div>
+                    <div class="column-half">
+
+                        <div class="data">
+                            <h2 class="bold-xlarge">48px</h2>
+                            <p class="bold-xsmall">16px</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="data-in-a-table">Data in a table</h3>
+            <p class="text">
+                Consider putting content into tables to make it easier to scan.
+            </p>
+
+            <ul class="text list-bullet">
+                <li>when comparing rows of numbers, align numbers to the right in table cells</li>
+                <li>use <a href="https://github.com/alphagov/govuk_frontend_toolkit#tabular-numbers">tabular numbers</a> to allow numbers of the same width to be more easily compared</li>
+            </ul>
+
+            <p class="text">
+                <a href="https://www.gov.uk/performance/carers-allowance/volumetrics">See an example of numeric table usage on GOV.UK</a>
+            </p>
+            <div class="example">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th class="numeric" scope="col">Paper form</th>
+                            <th class="numeric" scope="col">Digital</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>25 November to 1 December 2013</td>
+                            <td class="numeric">2,763</td>
+                            <td class="numeric">1,792</td>
+                        </tr>
+                        <tr>
+                            <td>2 to 8 December 2013</td>
+                            <td class="numeric">2,850</td>
+                            <td class="numeric">1,740</td>
+                        </tr>
+                        <tr>
+                            <td>9 to 15 December 2013</td>
+                            <td class="numeric">2,388</td>
+                            <td class="numeric">1,683</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                Not all content in tables should be right aligned.
+            </p>
+            <p class="text">
+                <a href="https://www.gov.uk/pay-leave-for-parents/y/yes/2013-1-2/employee/employee/yes/yes/122.00-week/yes/yes/yes/122.00-week/yes">See an example of table usage on GOV.UK</a>
+            </p>
+            <div class="example">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Dates and amounts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First 6 weeks</td>
+                            <td>£109.80 per week</td>
+                        </tr>
+                        <tr>
+                            <td>Next 33 weeks</td>
+                            <td>£109.80 per week</td>
+                        </tr>
+                        <tr>
+                            <td>Total estimated pay</td>
+                            <td>£4,282.20</td>
+                        </tr>
+                        <tr>
+                            <td>Tell the mother’s employer</td>
+                            <td>28 days before they want to start maternity pay</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Tables-AXM1FinduJR" rel="external">Discuss tables on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-data -->
+
+        <div id="guide-forms">
+
+            <h2 class="heading-large heading-with-border">6. Forms</h2>
+            <p class="text">
+                Keep forms as simple as possible &ndash; only ask what's needed to run your service.
+            </p>
+
+            <p><a href="/examples/forms/">See an example of GOV.UK form layout</a></p>
+
+            <h3 class="heading-medium" id="form-optional-fields">Optional and mandatory fields</h3>
+            <ul class="text list-bullet">
+                <li>only ask for the information you absolutely need</li>
+                <li>if you do ask for optional information, mark the labels of optional fields with '(optional)'</li>
+                <li>don't mark mandatory fields with asterisks</li>
+            </ul>
+
+            <h3 class="heading-medium" id="form-labels">Labels</h3>
+            <ul class="text list-bullet">
+                <li>all form fields should be given labels</li>
+                <li>don't hide labels, unless the surrounding context makes them unnecessary</li>
+                <li>labels should be aligned above their fields</li>
+                <li>label text should be short, direct and in sentence case</li>
+                <li>avoid colons at the end of labels</li>
+                <li>labels should be associated with form fields using the <code>for</code> attribute</li>
+            </ul>
+
+            <p class="text">
+                Click on the label "Full name" to bring focus to the form field.
+            </p>
+            <div class="example">
+                <label class="form-label" for="full-name-f1">Full name</label>
+                <input class="form-control" id="full-name-f1" type="text">
+            </div>
+
+            <h3 class="heading-medium" id="form-fields">Form fields</h3>
+            <div class="text">
+                <p>
+                    Make field widths proportional to the input they take.
+                </p>
+                <p>
+                    Ensure that users can enter the information they need at smaller screen sizes.
+                </p>
+                <p>
+                    Snap form fields to 100% width at smaller screen sizes.
+                </p>
+                <p>
+                    <a href="https://designpatterns.hackpad.com/Text-boxes-imgij2JcsHO" rel="external">Discuss text boxes on our Hackpad</a>
+                </p>
+            </div>
+
+            <h3 class="heading-medium" id="form-fieldsets">Fieldsets and legends</h3>
+            <p class="text">
+                Use fieldsets to group related form controls. The first element inside a fieldset must be a <code>legend</code> element which describes the group.
+            </p>
+
+            <h3 class="heading-medium" id="form-focus-states">Form focus states</h3>
+            <p class="text">
+                All elements use the yellow focus style as a highlight, as either a fill or 3px outline.
+            </p>
+            <p class="text">
+                Click on the label "Full name" or inside the form field to show the focus state.
+            </p>
+
+            <div class="example">
+                <div class="grid-row">
+                    <div class="column-two-thirds">
+                        <form>
+                            <div class="form-group">
+                                <label class="form-label" for="full-name-f2">Full name</label>
+                                <input class="form-control" type="text" id="full-name-f2">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column-third">
+                        <div class="swatch-wrapper">
+                            <h4 class="heading-small">Focus</h4>
+                            <div class="swatch swatch-yellow"></div>
+                            <ul>
+                                <li><b>#FFBF47</b></li>
+                                <li>$focus-colour</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="form-spacing">Spacing between form elements</h3>
+            <p class="text">
+                Ensure there is sufficient spacing between form elements.
+            </p>
+
+            <div class="example">
+                <!-- Use .form-group to create spacing when wrapping label and input pairs -->
+                <div class="form-group">
+                    <label class="form-label" for="first-name-2">First name</label>
+                    <input class="form-control" id="first-name-2" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="last-name-2">Last name</label>
+                    <input class="form-control" id="last-name-2" type="text">
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="form-hint-text">Hint text</h3>
+            <ul class="list-bullet text">
+                <li>don't use placeholder text in form fields, as this will disappear once content is entered into the form field</li>
+                <li>use hint text for supporting contextual help, this will always be shown</li>
+                <li>hint text should sit above a form field</li>
+                <li>ensure hint text can be read correctly by screen readers</li>
+            </ul>
+
+            <div class="example">
+                <label class="form-label" for="ni-number">
+                    National Insurance number
+                    <span class="form-hint">It'll be on your last payslip. For example, JH 21 90 0A.</span>
+                </label>
+                <input class="form-control" id="ni-number" type="text">
+            </div>
+
+            <h3 class="heading-medium" id="form-select-boxes">Drop-down lists</h3>
+            <div class="text">
+                <p>
+                    Avoid using drop-down lists (the HTML select element) - use radio buttons or checkboxes instead.
+                </p>
+                <p>
+                    <a href="https://www.youtube.com/watch?v=CUkMCQR4TpY" rel="external">Watch Alice Bartlett present the failings of select boxes to meet the needs of less technically capable users</a>.
+                </p>
+                <p>
+                    <a href="https://designpatterns.hackpad.com/Select-boxes-KzQ1IRd07HL" rel="external">Discuss select boxes on our Hackpad</a>
+                </p>
+            </div>
+
+            <h3 class="heading-medium" id="form-radio-buttons">Radio buttons</h3>
+            <ul class="list-bullet text">
+                <li>use these to let users choose a single option from a list</li>
+                <li>for more than two options, radio buttons should be stacked</li>
+                <li>radio buttons with large hit areas are easier to select with a mouse or touch devices</li>
+            </ul>
+
+            <div class="example">
+                <form>
+                    <fieldset class="inline">
+                        <label class="block-label" for="radio-inline-1">
+                            <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                            Yes
+                        </label>
+                        <label class="block-label" for="radio-inline-2">
+                            <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                            No
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="example">
+                <form>
+                    <label class="block-label" for="radio-1">
+                        <input id="radio-1" type="radio" name="radio-group" value="Northern Ireland">
+                        Northern Ireland
+                    </label>
+                    <label class="block-label" for="radio-2">
+                        <input id="radio-2" type="radio" name="radio-group" value="Isle of Man or the Channel Islands">
+                        Isle of Man or the Channel Islands
+                    </label>
+                    <p class="form-block">or</p>
+                    <label class="block-label" for="radio-3">
+                        <input id="radio-3" type="radio" name="radio-group" value="I am a British citizen living abroad">
+                        I am a British citizen living abroad
+                    </label>
+                </form>
+            </div>
+
+            <h3 class="heading-medium" id="form-checkboxes">Checkboxes</h3>
+            <ul class="list-bullet text">
+                <li>use these to select either on/off toggles or multiple selections</li>
+                <li>make it clear with words when users can select one or multiple options</li>
+            </ul>
+
+            <div class="example">
+                <form>
+                    <fieldset>
+                        <legend class="form-label-bold">Which types of waste do you transport regularly?</legend>
+                        <p>Select all that apply</p>
+                        <label class="block-label" for="checkbox-1">
+                            <input id="checkbox-1" type="checkbox" value="waste-animal">
+                            Waste from animal carcasses
+                        </label>
+                        <label class="block-label" for="checkbox-2">
+                            <input id="checkbox-2" type="checkbox" value="waste-mines">
+                            Waste from mines or quarries
+                        </label>
+                        <label class="block-label" for="checkbox-3">
+                            <input id="checkbox-3" type="checkbox" value="farm-agricultural">
+                            Farm or agricultural waste
+                        </label>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="text">
+                <p>Large hit areas aren't always appropriate.</p>
+            </div>
+
+            <div class="example">
+                <form>
+                    <label class="form-label" for="telephone-number">Enter your telephone number</label>
+                    <input class="form-control" id="telephone-number" type="text">
+                    <label class="form-checkbox" for="checkbox-telephone-number">
+                        <input id="checkbox-telephone-number" type="checkbox" value="checkbox-telephone-number">
+                        I need to be contacted using a text phone
+                    </label>
+                </form>
+            </div>
+
+            <div class="text">
+                <p>
+                    Only pre-select options if there's a strong, user-centred reason to.
+                </p>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Radio-buttons-and-checkboxes-8eBuLm9eRaz" rel="external">Discuss radio buttons and checkboxes on our Hackpad</a>
+            </p>
+
+            <h3 class="heading-medium" id="form-inset-form-elements">Inset form elements</h3>
+            <div class="text">
+                <p>
+                    Insets can be used within forms to emphasise supporting information.
+                </p>
+                <p>
+                    Click on "Yes" to see how this works.
+                </p>
+            </div>
+
+            <div class="example">
+                <form>
+                    <fieldset class="inline">
+                        <legend>
+                            <span class="form-label">
+                                Do you know their National Insurance number?
+                            </span>
+                        </legend>
+                        <div class="form-group form-group-compound">
+                            <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
+                                <input id="radio-indent-1" type="radio" name="radio-indent-group" value="Yes">
+                                Yes
+                            </label>
+                            <label class="block-label" for="radio-indent-2">
+                                <input id="radio-indent-2" type="radio" name="radio-indent-group" value="No">
+                                No
+                            </label>
+                        </div>
+                        <div class="panel-indent js-hidden" id="example-ni-no">
+                            <label class="form-label" for="national-insurance">National Insurance number</label>
+                            <input class="form-control" type="text" id="national-insurance">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <p>
+                Click on "Citizen of a different country" to see how this works.
+            </p>
+            <div class="example">
+                <form>
+                    <fieldset>
+                        <legend>
+                            <span class="form-label-bold">
+                                What is your nationality?
+                            </span>
+                        </legend>
+                        <p>
+                            Select all options that are relevant to you.
+                        </p>
+                        <div class="form-group form-group-compound">
+                            <label class="block-label" for="nationality-british">
+                                <input id="nationality-british" type="checkbox" value="British">
+                                British (including English, Scottish, Welsh and Northern Irish)
+                            </label>
+                            <label class="block-label" for="nationality-irish">
+                                <input id="nationality-irish" type="checkbox" value="Irish">
+                                Irish
+                            </label>
+                            <label class="block-label" for="nationality-other" data-target="example-different-country">
+                                <input id="nationality-other" type="checkbox" value="Citizen of a different country">
+                                Citizen of a different country
+                            </label>
+                        </div>
+                        <div class="panel-indent js-hidden" id="example-different-country">
+                            <label class="form-label" for="nationality-other-country">Country name</label>
+                            <input class="form-control" type="text" id="nationality-other-country">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/GOV.UK-elements-feedback-sKrDyQxcfA2#:h=Forms" rel="external">Discuss forms on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-forms -->
+
+        <div id="guide-buttons">
+
+            <h2 class="heading-large heading-with-border">7. Buttons</h2>
+
+            <p class="text">
+                Use buttons to move though a transaction, aim to use only one button per page.
+            </p>
+
+            <h3 class="heading-medium" id="buttons-button-text">Button text</h3>
+            <p class="text">
+                Button text should be short and describe the action the button performs.
+            </p>
+
+            <div class="example">
+                <button class="button">Save and continue</button>
+            </div>
+
+            <p class="text">
+                Launch your service with a Start now button.
+            </p>
+
+            <div class="example">
+                <a href="#" class="button button-get-started" role="button">Start now</a>
+            </div>
+
+            <p class="text">
+                Align the primary action button to the left edge of your form, in the user's line of sight.
+            </p>
+
+            <div class="example example-button">
+
+                <form action="/" method="post" class="form">
+                    <div class="form-group">
+                        <label for="form-email-address-1" class="form-label">Email address</label>
+                        <input type="text" class="form-control" id="form-email-address-1">
+                    </div>
+                    <div class="form-group">
+                        <button class="button">Save and continue</button>
+                        <p><a href="#">Back</a></p>
+                    </div>
+                </form>
+
+            </div>
+
+            <h3 class="heading-medium" id="buttons-creating-buttons">Creating buttons</h3>
+            <p class="text">
+                Use the GOV.UK Sass button mixin &ndash; find this in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_buttons.scss">buttons.scss</a> file
+            </p>
+
+            <div class="example example-button">
+                <div class="grid-row">
+                    <div class="column-third">
+
+                        <button class="button">Save and continue</button>
+
+                    </div>
+                    <div class="column-third">
+
+                        <div class="swatch-wrapper">
+                            <h4 class="heading-small">Button</h4>
+                            <div class="swatch swatch-button-colour"></div>
+                            <ul>
+                                <li><b>#00823B</b></li>
+                                <li>$button-colour</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="column-third">
+
+                        <div class="swatch-wrapper">
+                            <h4 class="heading-small">Focus</h4>
+                            <div class="swatch swatch-yellow"></div>
+                            <ul>
+                                <li><b>#FFBF47</b></li>
+                                <li>$focus-colour</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="buttons-disabled-buttons">Disabled buttons</h3>
+            <p>
+                Disabled buttons should be set at 50% opacity.
+            </p>
+            <div class="example">
+                <button class="button" disabled="disabled">Primary button</button>
+            </div>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Navigation-buttons-continue-next-previous-zoP1sKiW3y4" rel="external">Discuss buttons on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-buttons -->
+
+        <div id="guide-errors">
+
+            <h2 class="heading-large heading-with-border">8. Errors and validation</h2>
+
+            <h3 class="heading-medium">Minimise the number of errors on a page</h3>
+
+            <p class="text">
+                Recovering from errors can be hard for users, especially if a page contains multiple errors.
+                Avoid this by splitting long forms across multiple pages, with each page asking a single question.
+            </p>
+
+            <h3 class="heading-medium">
+                Summarise errors at the top of the page
+            </h3>
+
+            <p class="text lead-in">
+                You must:
+            </p>
+
+            <ul class="text list-bullet">
+                <li>show an error summary at the top of the page</li>
+                <li>include a heading to alert the user to the error</li>
+                <li>link to each of the problematic questions</li>
+            </ul>
+
+            <div class="example example-error">
+                <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-1" tabindex="-1">
+
+                    <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-1">
+                        Message to alert the user to a problem goes here
+                    </h1>
+
+                    <p>
+                        Optional description of the error(s) and how to correct them
+                    </p>
+
+                    <ul class="error-summary-list">
+                        <li><a href="#example-personal-details">Descriptive link to the question with an error</a></li>
+                    </ul>
+
+                </div>
+
+                <h1 class="heading-large">
+                    Check your personal details
+                </h1>
+
+                <p>
+                    Look at your name, signature and other details.
+                </p>
+
+                <form>
+                    <div class="form-group error">
+                        <fieldset>
+
+                            <legend id="example-personal-details">
+
+                                <span class="form-label-bold">
+                                    Are your personal details correct and up-to-date?
+                                </span>
+                                <span class="error-message">
+                                    Error message about personal details goes here
+                                </span>
+
+                            </legend>
+
+                            <label class="block-label" for="personal_details_yes">
+                                <input id="personal_details_yes" type="radio" name="personal_details" value="Yes">
+                                <span></span> Yes, my personal details are correct
+                            </label>
+
+                            <label class="block-label" for="personal_details_no">
+                                <input id="personal_details_no" type="radio" name="personal_details" value="No">
+                                <span></span> No, some details are wrong or have changed
+                            </label>
+
+                        </fieldset>
+                    </div>
+
+                    <input class="button" type="submit" value="Continue">
+
+                </form>
+            </div>
+
+            <h4 class="text heading-small panel-indent">
+                The error summary must appear at the top of the page, so it is visible when the page is refreshed and is immediately read out by assistive technology.
+            </h4>
+
+            <div class="text">
+
+                <h3 class="heading-medium">Highlight errors in forms</h3>
+
+                <p class="lead-in">
+                    For each error:
+                </p>
+
+                <ul class="list-bullet">
+                    <li>write a message that helps the user to understand why the error occurred and what to do about it</li>
+                    <li>
+                        put the message in the <code>&lt;label&gt;</code> or <code>&lt;legend&gt;</code> for the question,
+                        after the question text, in red
+                    </li>
+                    <li>use a red border to visually connect the message and the question it belongs to</li>
+                    <li>if the error relates to specific text fields within the question, give these a red border as well</li>
+                </ul>
+
+            </div>
+
+            <p class="text">
+                For red, use the <code>$error-colour</code> Sass variable &ndash; find this in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/_colours.scss">colours.scss</a> file
+            </p>
+
+            <div class="example example-error">
+                <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+
+                    <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
+                        Message to alert the user to a problem goes here
+                    </h1>
+
+                    <p>
+                        Optional description of the error(s) and how to correct them
+                    </p>
+
+                    <ul class="error-summary-list">
+                        <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
+                        <li><a href="#example-ni-number">Descriptive link to the question with an error</a></li>
+                    </ul>
+
+                </div>
+
+                <h1 class="heading-large">
+                    Your personal details
+                </h1>
+
+                <div class="form-group error">
+
+                    <label for="example-full-name" id="error-full-name">
+
+                        <span class="form-label-bold">Full name</span>
+                        <span class="form-hint">As shown on your birth certificate or passport</span>
+                        <span class="error-message" id="error-message-full-name">Error message about full name goes here</span>
+
+                    </label>
+
+                    <input class="form-control" id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
+                </div>
+
+                <div class="form-group error">
+
+                    <label for="example-ni-number" id="error-ni-number">
+
+                        <span class="form-label-bold">National Insurance number</span>
+                        <span class="form-hint">
+                            It's on your National Insurance card, benefit letter, payslip or P60.
+                            <br>
+                            For example, 'VO 12 34 56 D'.
+                        </span>
+                        <span class="error-message" id="error-message-ni-number">
+                            Error message about National Insurance number goes here
+                        </span>
+
+                    </label>
+
+                    <input class="form-control" id="example-ni-number" type="text" name="niNo" value="" aria-describedby="error-message-ni-number">
+
+                </div>
+
+                <input class="button" type="submit" value="Continue">
+            </div>
+
+            <p class="text">
+                If users are regularly making multiple errors on a page this indicates that your page has either too many questions, or that the question needs to be rewritten in plain English.
+            </p>
+
+            <p class="text">
+                Simplify the page by rewriting and where possible, removing questions or splitting questions across multiple pages.
+            </p>
+
+            <h3 class="heading-medium" id="error-message-examples">Implementation examples</h3>
+
+            <ul class="list-bullet text">
+                <li>
+                    <a href="/examples/form-validation-single-question-radio">
+                        Example with one question, a group of radio buttons
+                    </a>
+                </li>
+                <li>
+                    <a href="/examples/form-validation-multiple-questions">
+                        Example with multiple questions
+                    </a>
+                </li>
+            </ul>
+
+            <p>
+                <a href="https://designpatterns.hackpad.com/Error-messaging-and-validation-HiGXPZ7XiG0" rel="external">Discuss errors on our Hackpad</a>
+            </p>
+
+        </div>
+        <!-- / #guide-errors -->
+
+        <div id="guide-alpha-beta">
+
+            <h2 class="heading-large heading-with-border">9. Alpha and beta banners</h2>
+            <p class="text">
+                You have to use an alpha banner if your thing is in alpha, and a beta banner if it’s in beta.
+            </p>
+
+            <h3 class="heading-medium" id="guide-alpha-beta-subdomain">Things on the service.gov.uk subdomain</h3>
+            <p class="text">
+                If your service is in beta or alpha, you must show the relevant banner in the header.
+                It should sit directly underneath the black GOV.UK header and colour bar.
+            </p>
+
+            <div class="example">
+                <div class="phase-banner-alpha">
+                    <p>
+                        <strong class="phase-tag">ALPHA</strong>
+                        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="example">
+                <div class="phase-banner-beta">
+                    <p>
+                        <strong class="phase-tag">BETA</strong>
+                        <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+                    </p>
+                </div>
+            </div>
+
+            <h3 class="heading-medium" id="guide-alpha-beta-govuk">Things on GOV.UK</h3>
+            <p class="text">
+                If your GOV.UK content is in beta or alpha, show the relevant banner below the page title, but above the body content. You can see what they should look like in <a href="https://designnotes.blog.gov.uk/2014/03/26/betas-on-gov-uk/">this blog post</a>.
+            </p>
+
+            <h3 class="heading-medium" id="alpha-beta-creating-banners">Creating alpha and beta banners</h3>
+            <p class="text">
+                Use the GOV.UK Sass phase banner mixin &ndash; find this in the GOV.UK frontend toolkit <a href="https://github.com/alphagov/govuk_frontend_toolkit/blob/master/stylesheets/design-patterns/_alpha-beta.scss">alpha-beta.scss</a> file
+            </p>
+
+        </div>
+        <!-- / #guide-alpha-beta -->
+
+    </main><!-- / #content -->
+
+    <footer class="group js-footer" id="footer" role="contentinfo">
+
+        <div class="footer-wrapper">
+
+            <div class="footer-meta">
+                <div class="footer-meta-inner">
+
+                    <div class="open-government-licence">
+                        <p class="logo"><a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence</a></p>
+                        <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</p>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm">&copy; Crown copyright</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--end footer-->
+
+    <div id="global-app-error" class="app-error hidden"></div>
+
+    <script src="/public/javascripts/govuk-template.js?0.12.0" type="text/javascript"></script>
+
+    <script src="/public/javascripts/vendor/jquery-1.11.0.min.js"></script>
+
+    <!-- govuk_frontend_toolkit js -->
+    <script src="/public/javascripts/vendor/polyfills/bind.js"></script>
+    <script src="/public/javascripts/govuk/selection-buttons.js"></script>
+
+    <!-- govuk_elements js -->
+    <script src="/public/javascripts/vendor/details.polyfill.js"></script>
+    <script src="/public/javascripts/application.js"></script>
+</body>
+</html>
