@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Patient Banner";
+}
+<div class="patient-list">
+    <h2 class="heading-medium">Patient List</h2>
+    <p class="text">
+        <a href="https://www.gov.uk/pay-leave-for-parents/y/yes/2013-1-2/employee/employee/yes/yes/122.00-week/yes/yes/yes/122.00-week/yes">See an example of table usage on GOV.UK</a>
+    </p>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Location</th>
+                <th>Patient Identification</th>
+                <th>Presenting Complaint</th>
+                <th>Past Medical History</th>
+                <th>Problems and Test Results</th>
+                <th>Tasks</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (var i = 0; i < 10; i++)
+            {
+                <tr>
+                    <td rowspan="3"><b>A3</b></td>
+                    <td rowspan="3" class="nowrap">
+                        <b>LEVI, Steven (Mr)</b><br />
+                        <i>Preferred Name</i> <b>Steve</b><br />
+                        <i>Born</i> <b>10-Nov-1981</b><br />
+                        <i>NHS No</i> <b>507 745 4662</b><br />
+                    </td>
+                    <td>Bronchiectasis</td>
+                    <td>Cystic Fibrosis</td>
+                    <td>Blood cultures negative</td>
+                    <td rowspan="3">Dietician review</td>
+                </tr>
+                                <tr>
+                                    <td rowspan="2">Lower Respiratory Tract Infection</td>
+                                    <td rowspan="2">Chronic Pancreatitis</td>
+                                    <td>Urinary antigens negative</td>
+                                </tr>
+                                <tr>
+                                    <td>5 days IV tazocin</td>
+                                </tr>
+            }
+
+
+        </tbody>
+    </table>
+</div>
