@@ -318,10 +318,10 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
   width: device-width; }
 
 #global-header {
-  background-color: #fff;
+  background-color: #0b0c0c;
   width: 100%; }
   #global-header .header-wrapper {
-    background-color: #fff;
+    background-color: #0b0c0c;
     max-width: 990px;
     margin: 0 auto;
     padding-top: 8px;
@@ -357,7 +357,7 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
     height: 30px;
     overflow: visible;
     vertical-align: baseline;
-    color: #0b0c0c;
+    color: #fff;
     font-weight: bold;
     font-size: 30px;
     line-height: 1em;
@@ -368,8 +368,8 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
     #global-header #logo img {
       position: relative;
       top: -2px;
-      width: 110px;
-      height: 44px;
+      width: 35px;
+      height: 31px;
       padding-right: 6px;
       float: left;
       display: inline;
@@ -391,7 +391,7 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
       font-weight: 400;
       text-transform: none;
       font-weight: bold;
-      color: #0b0c0c;
+      color: #fff;
       text-decoration: none; }
       @media (max-width: 640px) {
         #global-header .header-proposition #proposition-name {
@@ -405,7 +405,7 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
       line-height: 1.25;
       font-weight: 400;
       text-transform: none;
-      color: #0b0c0c;
+      color: #fff;
       display: block;
       float: right;
       text-decoration: none;
@@ -451,7 +451,7 @@ input:focus, textarea:focus, select:focus, button:focus, #global-header input:fo
         #global-header .header-proposition #proposition-link li.clear-child, #global-header .header-proposition #proposition-links li.clear-child {
           clear: left; }
       #global-header .header-proposition #proposition-link a, #global-header .header-proposition #proposition-links a {
-        color: #0b0c0c;
+        color: #fff;
         text-decoration: none;
         font-family: "nta", Arial, sans-serif;
         font-size: 14px;
