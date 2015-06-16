@@ -2,9 +2,9 @@
 @{
     ViewBag.Title = "Patient Banner";
 }
-<h1>Address Input and Display</h1>
-<h2>Display</h2>
-<h3>In-form or vertically aligned address</h3>
+<h1 class="heading-large">Address Input and Display</h1>
+<h2 class="heading-medium">Address Display</h2>
+<h3 class="heading-small">In-form or vertically aligned address</h3>
 <address>
     18 Orchard Cottage<br/>
     King’s Road<br/>
@@ -12,16 +12,15 @@
     Northshire<br/>
     NS33 8KR<br/>
 </address>
-<h3>In-line or horizontally aligned address</h3>
+<h3 class="heading-small">In-line or horizontally aligned address</h3>
 <address>18 Orchard Cottage, King’s Road, Ipswich, Northshire, NS33 8KR</address>
-<h2>Editing</h2>
+<h2 class="heading-medium">Editing</h2>
 
 
 
 <form asp-controller="Home" asp-action="Address" method="post" class="form-horizontal" role="form">
-
     <div asp-validation-toggle="On">
-        <div asp-validation-summary="ValidationSummary.All" class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
+        <div class="error-summary" role="group" aria-labelledby="error-summary-heading-example-2" tabindex="-1">
 
             <h1 class="heading-medium error-summary-heading" id="error-summary-heading-example-2">
                 Message to alert the user to a problem goes here
@@ -32,32 +31,64 @@
             </p>
 
             <ul class="error-summary-list">
-                <li><a href="#example-full-name">Descriptive link to the question with an error</a></li>
-                <li><a href="#example-ni-number">Descriptive link to the question with an error</a></li>
+                <li><a asp-validation-summary-anchor="Line1" href="#Line1"></a></li>
             </ul>
 
         </div>
 
     </div>
-        <h1 class="heading-large">
-            Your personal details
-        </h1>
 
-        <div class="form-group" asp-validation-add-class-for="Line1" asp-validation-class-name="error">
+    <div class="form-group" asp-validation-add-class-for="Line1" asp-validation-class-name="error">
+        <label asp-for="Line1">
+            <span class="form-label-bold">Line 1</span>
+            <span class="error-message" asp-validation-for="Line1" id="error-message-line1"></span>
+        </label>
+        <input asp-for="Line1" class="form-control" id="Line1" type="text" name="Line1" aria-describedby="error-message-line1" placeholder="e.g. 18 Orchard Cottage"/>
+    </div>
 
-            <label for="Line1">
+    <div class="form-group" asp-validation-add-class-for="Line2" asp-validation-class-name="error">
+        <label asp-for="Line2">
+            <span class="form-label-bold">Line 2</span>
+            <span class="error-message" asp-validation-for="Line2" id="error-message-line2"></span>
+        </label>
+        <input asp-for="Line2" class="form-control" id="Line2" type="text" name="Line2" aria-describedby="error-message-line2" placeholder="e.g. King's Road"/>
+    </div>
 
-                <span class="form-label-bold">Line 1</span>
-                <span class="form-hint">e.g. 18 Orchard Cottage</span>
-                <span class="error-message" asp-validation-for="Line1"></span>
+    <div class="form-group" asp-validation-add-class-for="Line3" asp-validation-class-name="error">
+        <label asp-for="Line3">
+            <span class="form-label-bold">Line 3</span>
+            <span class="error-message" asp-validation-for="Line3" id="error-message-line3"></span>
+        </label>
+        <input asp-for="Line3" class="form-control" id="Line3" type="text" name="Line3" aria-describedby="error-message-line3" placeholder="e.g. King's Road" />
+    </div>
 
-            </label>
+    <div class="form-group" asp-validation-add-class-for="Town" asp-validation-class-name="error">
+        <label asp-for="Town">
+            <span class="form-label-bold">Town / City</span>
+            <span class="error-message" asp-validation-for="Town" id="error-message-town"></span>
+        </label>
+        <input asp-for="Town" class="form-control" type="text" aria-describedby="error-message-town" maxlength="18" placeholder="e.g. Ipswich"/>
+    </div>
 
-            <input class="form-control" id="example-full-name" type="text" name="fullName" value="" aria-describedby="error-message-full-name">
-        </div>
+    <div class="form-group" asp-validation-add-class-for="County" asp-validation-class-name="error">
+        <label asp-for="County">
+            <span class="form-label-bold">County</span>
+            <span class="error-message" asp-validation-for="County" id="error-message-county"></span>
+        </label>
+        <input asp-for="County" class="form-control" type="text" aria-describedby="error-message-county" maxlength="18" placeholder="e.g. Northshire"/>
+    </div>
+
+    <div class="form-group" asp-validation-add-class-for="Postcode" asp-validation-class-name="error">
+        <label asp-for="Postcode">
+            <span class="form-label-bold">Postcode</span>
+            <span class="error-message" asp-validation-for="Postcode" id="error-message-postcode"></span>
+        </label>
+        <input asp-for="Postcode" class="form-control-1-2" type="text" aria-describedby="error-message-postcode" maxlength="8" placeholder="e.g. NS33 8KR"/>
+        <input class="button" type="button" value="Find postcode"/>
+    </div>
 
 
-        <input class="button" type="submit" value="Continue">
+    <input class="button" type="submit" value="Continue">
 
 
         <!-- / #guide-errors -->

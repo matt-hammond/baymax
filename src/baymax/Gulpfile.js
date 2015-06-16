@@ -12,6 +12,12 @@ gulp.task('sass-compile', function () {
         .pipe(gulp.dest('./wwwroot/public/stylesheets'));
 });
 
+gulp.task('sass-compile-custom', function () {
+    gulp.src('./assets/sass/*.scss')
+        .pipe(sass({ includePaths: ['./submodules/govuk_frontend_toolkit/stylesheets/'] }))
+        .pipe(gulp.dest('./wwwroot/public/stylesheets'));
+});
+
 gulp.task('copy-govuk_frontend_toolkit', function () {
     gulp.src('./submodules/govuk_frontend_toolkit/javascripts/**/*')
         .pipe(gulp.dest('./wwwroot/public/javascripts'));
@@ -33,6 +39,7 @@ gulp.task('copy-nhs_template', function () {
 
 gulp.task('default', [
     'sass-compile',
+    'sass-compile-custom',
     'copy-govuk_frontend_toolkit',
         'copy-govuk_elements',
      'copy-nhs_template'

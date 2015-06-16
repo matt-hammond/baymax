@@ -1,3 +1,493 @@
 ﻿@{
     ViewBag.Title = "Patient Banner";
+    var date = new DateTime(1980, 8, 14);
 }
+<div id="global-breadcrumb" class="header-context">
+    <nav role="navigation">
+        <ol class="group">
+            <li><a href="/">Home</a></li>
+            <li><a href="/home/date">Date and Time Display</a></li>
+        </ol>
+    </nav>
+</div>
+<h1 class="heading-large">Date and Time Display</h1>
+<h2 class="heading-medium">Date</h2>
+<p>Note that the guidance is that clinical systems should use the <a href="#short-date-format">short date format</a> while information presented to the patient should always use the <a href="#long-date-format">long date format</a>.</p>
+<h3 class="heading-small" id="short-date-format">Short Date Format</h3>
+
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>@date.ToString("dd-MMM-yyyy")</p>
+        <asp-prettify><p>@date.ToString("dd-MMM-yyyy")</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0002</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/month.aspx">Display the month textually, not numerically</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0003</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/month.aspx">Display the month with only the first letter in capitals</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0004</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/year.aspx">Display the year value numerically using four digits</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0006</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/shortdate.aspx">Display dates using the short date format in all instances of clinical usage affecting patient treatment, including patient identification</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0007</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/daymonth.aspx">Display the month as a three letter abbreviation, with May being displayed in full</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0008</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/month.aspx">When displaying the month, do not include any punctuation, such as a full stop</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0009</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/month.aspx">Use a single hyphen to separate the day and month, and the month and year</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0010</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/shortdate.aspx">When using the short date format, ignore the user's regional settings</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0018</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/daymonth.aspx">Display the day value using two digits (values less than 10 should appear with a zero in the first position)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>@date.ToString("ddd dd-MMM-yyyy")</p>
+        <asp-prettify><p>@date.ToString("ddd dd-MMM-yyyy")</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0016</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/weekdays.aspx">When displaying the day of the week, use one of the illustrated abbreviations</a>
+            <span class="highlight">Recommended</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0017</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/weekdays.aspx">Displaying the day of the week is optional, but when displayed, it must be placed immediately before the day value, with a single space separating the permitted abbreviated form of the day, from the day value</a>
+            <span class="highlight">Recommended</span>
+        </div>
+
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>Unknown</p>
+        <p>Not recorded</p>
+        <asp-prettify><p>Unknown</p>
+<p>Not recorded</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0022</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/nullvalues.aspx">Display null date using an appropriate value (for example 'Unknown' or 'Not recorded')s</a>
+            <span class="highlight">Recommended</span>
+        </div>
+    </div>
+</div>
+
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    @date.ToString("ddd dd-MMM-yyyy")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @date.ToString("ddd dd-MMM-yyyy")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @date.ToString("ddd dd-MMM-yyyy")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @date.ToString("ddd dd-MMM-yyyy")
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    @date.ToString("ddd dd-MMM-yyyy")
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <asp-prettify>
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        @date.ToString("ddd dd-MMM-yyyy")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @date.ToString("ddd dd-MMM-yyyy")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @date.ToString("ddd dd-MMM-yyyy")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @date.ToString("ddd dd-MMM-yyyy")
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @date.ToString("ddd dd-MMM-yyyy")
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0005</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/nullvalues.aspx">Align dates when displaying dates in a vertical column, such as in a table</a>
+            <span class="highlight">Recommended</span>
+        </div>
+    </div>
+</div>
+
+<h3 class="heading-small" id="long-date-format">Long Date Format</h3>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>@date.ToString("dd MMMM yyyy")</p>
+        <asp-prettify>
+            <p>@date.ToString("dd MMMM yyyy")</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0011</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/longdate.aspx">Use the long date format when communicating with the patient</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0012</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/LongDate/daymonth.aspx">Display the month name in full</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0013</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/LongDate/separators.aspx">Use a single whitespace to separate the day and month, and the month and yearl</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0014</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/longdate.aspx">When using the long date format, follow the user's default regional settings ignoring any changes made by the user to these default settings</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0015</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/longdate.aspx">Use the long date format when interacting with screen readers</a>
+            <span class="highlight">Recommended</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0019</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/LongDate/daymonth.aspx">Display the day value using two digits (values less than 10 should appear with a zero in the first position, unless the day value is displayed in ordinal form)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>1<sup>st</sup> January 2001
+        </p>
+        <asp-prettify>
+            <p>1<sup>st</sup> January 2001
+            </p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0020</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/LongDate/daymonth.aspx">When displaying the day value as an ordinal number, the suffix used must be one of those illustrated</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Ta-0021</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Date/LongDate/daymonth.aspx">When displaying the day value as an ordinal number, the two-letter suffix must be displayed in lower case and as a superscript immediately after the number</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+
+<h2 class="heading-medium">Time</h2>
+<h3 class="heading-small" id="short-time-format">Short Time Format</h3>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>23:54</p>
+        <asp-prettify>
+            <p>23:54</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0001</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/24hrclock.aspx">Display time using the 24-hour clock only</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0002</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Display an exact time as HH:mm</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0003</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Display hours using two digits (values less than 10 should appear with a zero in the first position)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0004</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Display minutes using two digits (values less than 10 should appear with a zero in the first position)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0006</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/separators.aspx">Separate the hours and minutes with a colon</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tb-0032</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/24hrclock.aspx">Provide indication to the user that the 24-hour clock is in use</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not implemented. Tooltips are not included in the GOV.UK Frontend Toolkit and are appropriate for mobile or tablet users</span>
+        </div>
+
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>23:54:03</p>
+        <asp-prettify>
+            <p>23:54:03</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0005</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Display seconds as two digits (values less than 10 should appear with a zero in the first position)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0006</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/separators.aspx">Separate the minutes and seconds with a colon</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0012</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Display seconds only if required</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>Tuesday 05 January 2009 09:43:22</p>
+        <asp-prettify>
+            <p>Tuesday 05 January 2009 09:43:22</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0008</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/syntax.aspx">Separate date and time values with a white space</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>00:00</p>
+        <p>23:59</p>
+        <asp-prettify>
+            <p>00:00</p>
+            <p>23:59</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0008</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/midnight.aspx">Display midnight as 00:00</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0010</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/midnight.aspx">Display the last minute in the day as 23:59</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>Unknown</p>
+        <p>Not recorded</p>
+        <asp-prettify>
+            <p>Unknown</p>
+            <p>Not recorded</p>
+        </asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0011</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/midnight.aspx">Display null times using an appropriate value, for example, 'Unknown' and 'Not recorded'</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+<h3 class="heading-small" id="time-range-format">Time Ranges</h3>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>From 06:23 to 08:23</p>
+        <asp-prettify><p>From 06:23 to 08:23</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0013</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/midnight.aspx">Display time ranges as two adjacent time displays, each identified by a contextually appropriate label, such as 'From' and 'To'</a>
+            <span class="highlight">Recommended</span>
+        </div>
+    </div>
+</div>
+<h3 class="heading-small" id="approx-time-format">Approximate Times</h3>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>Approx 02:00</p>
+        <asp-prettify>
+            <p>Approx 02:00</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0014</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/approx.aspx">Precede the display of an approximate time value with the word 'Approx'</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0015</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/approx.aspx">Display the time value using the guidance for exact time</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0016</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Time/approx.aspx">Leave a white space between the 'Approx' and the HH element of the time display</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>
+
+<h2 class="heading-medium">Duration</h2>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>4hr 32min 16sec</p>
+        <p>5y 5m 5d 5min 55sec</p>
+        <asp-prettify>
+            <p>4hr 32min 16sec</p>
+            <p>5y 5m 5d 5min 55sec</p></asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0017</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/abbreviations.aspx">Display durations using the illustrated values, as appropriate</a>
+            <span class="highlight">Mandatory</span>
+            <table>
+                <tbody>
+                <tr><td>y</td><td>years</td></tr>
+                <tr><td>m</td><td>months</td></tr>
+                <tr><td>w</td><td>weeks</td></tr>
+                <tr><td>d</td><td>days</td></tr>
+                <tr><td>hr</td><td>hr</td></tr>
+                <tr><td>min</td><td>min</td></tr>
+                <tr><td>sec</td><td>sec</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0018</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/syntax.aspx">Use whole numbers for time duration, for example, 1, 5 and 60. Do not use decimals or fractions, for example, 0.5, 1.5, ¾</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0026</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/nullvalues.aspx">Omit zero-valued units from the display</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0027</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/separators.aspx">Display duration values and their respective units as pairs, with no intervening whitespace between the value and unit</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0028</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/separators.aspx">Use a white space as the separator when displaying a duration composed of more than one unit</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0029</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/syntax.aspx">Display time duration units in decreasing order of significance</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0034</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/abbreviations.aspx">Allow the set of duration unit abbreviations to be extended appropriately, for example, 'hrs' as well as 'hr'. Ensure that any additions are unique within the entire set</a>
+            <span class="highlight">Recommended</span>
+        </div>
+    </div>
+</div>
+<h3 class="heading-small" id="approx-duration-format">Approximate Times</h3>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <p>Approx 2hr 40min</p>
+        <asp-prettify>
+            <p>Approx 2hr 40min</p>
+        </asp-prettify>
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0030</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/approx.aspx">Precede the display of an approximate duration value with the word 'Approx'</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tb-0031</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeDisplay/Duration/approx.aspx">Leave a white space between the 'Approx' and the first element of an approximate duration value</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+    </div>
+</div>

@@ -1,2 +1,30 @@
-﻿body {
+﻿@import "colours.scss";
+@import "grid_layout.scss";
+@import "typography.scss";
+
+.cui-rule {
+    @include core-14;
+      margin-bottom: $gutter*0.5;
+
+    .highlight {
+        font-style: normal;
+        color: $nhs-dark-blue;
+        display:block;
+    }
+
+    .cui-ref{
+          color: $grey-2;
+          display:block;
+    }
+
+    .rule-not-met{
+        color: $error-colour;
+        font-weight:bold;
+    }
+
+    td{
+        @include core-14;
+    }
 }
+
+
