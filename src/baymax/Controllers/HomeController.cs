@@ -55,6 +55,12 @@ namespace baymax.Controllers
             return View();
         }
 
+        public IActionResult DateInput()
+        {
+            return View();
+        }
+
+
         public IActionResult NhsNumber()
         {
             return View();

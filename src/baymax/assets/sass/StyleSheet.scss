@@ -18,13 +18,26 @@
     }
 
     .rule-not-met{
-        color: $error-colour;
+        color: $grey-2;
         font-weight:bold;
     }
 
     td{
         @include core-14;
     }
+
+
 }
+    .warning {
+
+          // Add a red border to the left of the field
+          border-left: 4px solid $nhs-orange;
+          padding-left: 10px;
+
+          @include media(tablet) {
+            border-left: 5px solid $nhs-orange;
+            padding-left: $gutter-half;
+          }
+        }
 
 

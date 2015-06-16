@@ -39,7 +39,7 @@
     color: #bfc1c3;
     display: block; }
   .cui-rule .rule-not-met {
-    color: #b10e1e;
+    color: #bfc1c3;
     font-weight: bold; }
   .cui-rule td {
     font-family: "nta", Arial, sans-serif;
@@ -51,3 +51,11 @@
       .cui-rule td {
         font-size: 12px;
         line-height: 1.25; } }
+
+.warning {
+  border-left: 4px solid #ff6600;
+  padding-left: 10px; }
+  @media (min-width: 641px) {
+    .warning {
+      border-left: 5px solid #ff6600;
+      padding-left: 15px; } }
