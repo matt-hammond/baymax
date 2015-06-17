@@ -31,6 +31,7 @@
   "publishExclude": [
     "node_modules",
     "bower_components",
+    "submodules",
     "**.xproj",
     "**.user",
     "**.vspscc"
@@ -42,6 +43,7 @@
   "exclude": [
     "wwwroot",
     "node_modules",
+    "submodules",
     "bower_components"
   ]
 }
