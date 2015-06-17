@@ -7,3 +7,6 @@
 [submodule "src/baymax/submodules/govuk_elements"]
 	path = src/baymax/submodules/govuk_elements
 	url = https://github.com/matt-hammond/govuk_elements.git
+[submodule "src/baymax/submodules/static"]
+	path = src/baymax/submodules/static
+	url = https://github.com/matt-hammond/static.git

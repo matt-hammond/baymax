@@ -43,29 +43,46 @@
     </div>
     <div class="column-half">
         <div class="cui-rule warning">
+            <span class="cui-ref">D+Tc-0001</span>
+            Adopt the NHS Common User Interface standard for Date Display for the format of any dates displayed within the date input control
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
+        </div>
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0002</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/freetext.aspx">Allow for both free text input of dates and the input of dates using a calendar control</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
         <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0003</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/editing.aspx">Allow the date elements to be individually edited (day, month and year)</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
         <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0004</span>
-            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/calendar.aspx">Include the calendar icon within the boundary of the date input field)</a>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/calendar.aspx">Include the calendar icon within the boundary of the date input field</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tc-0005</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Provide disambiguation of any free text date input</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date picker</span>
         </div>
         <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0006</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/instructions.aspx">Provide instructions on how to use the control, for example, via the use of tooltips. The instructions must contain details of the different date types that can be entered</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Hint text can be provided as per the example. Tooltips are inappropriate for touch interfaces</span>
         </div>
-        <div class="cui-rule warning">
+        <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0007</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/arithmetic.aspx">Allow users to enter arithmetic shortcuts, such as '+3m' for three months later or '-2d' for two days earlier. The relevant operators are as illustrated</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
         </div>
         <div class="cui-rule">
             <span class="cui-ref">D+Tc-0009</span>
@@ -76,33 +93,39 @@
             <span class="cui-ref">D+Tc-0010</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/calendar.aspx">Provide access to the calendar control via a calendar icon)</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
-        <div class="cui-rule error">
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0012</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/controls.aspx">Provide a button to allow the user to enter today's date</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
-        <div class="cui-rule error">
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0013</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/controls.aspx">Provide a link or button to close the control</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
-        <div class="cui-rule error">
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0014</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/elements.aspx">Provide a visual indication of the current date</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
-        <div class="cui-rule error">
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0015</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/elements.aspx">Include the days of the week within the calendar view</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
         <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0016</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/instructions.aspx">Provide access to relevant instructional text (for example, via tooltips) on the clickable elements in the calendar header</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
         </div>
-        <div class="cui-rule error">
+        <div class="cui-rule">
             <span class="cui-ref">D+Tc-0018</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/keyboard.aspx">Display the appropriate value in the free text field following selection of the date</a>
             <span class="highlight">Mandatory</span>
@@ -111,38 +134,51 @@
             <span class="cui-ref">D+Tc-0019</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/keyboard.aspx">Ensure that the control can be operated effectively via the keyboard (for example, using arrow keys)</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">HTML5 support may vary by browser. Inappropriate for touch interfaces</span>
         </div>
         <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0011</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/CalInput/editing.aspx">Provide the ability to select a month independently, and a year independently. Signify the interactivity of these elements by suitable styling, for example as buttons or links, and ensure that they have descriptive tooltips</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tc-0038</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Provide the facility for a user to disambiguate a date entered via the date control</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
         </div>
         <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0039</span>
-            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Within the date input control, do not allow users to input arithmetic shortcuts relating to time</a>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Display a message dialog box with appropriate instructional text if the data is ambiguous or incomplete</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
         </div>
         <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0040</span>
-            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Within the date input control, do not allow users to input arithmetic shortcuts relating to time</a>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/disambiguation.aspx">Display a maximum of two suggestions based on the data entered, plus an option to re-enter the value in the input field. Selection of a suggested value enters that value into the control</a>
             <span class="highlight">Recommended</span>
+            <span class="rule-not-met">Not supported with HTML5 date input element</span>
         </div>
         <div class="cui-rule">
             <span class="cui-ref">D+Tc-0041</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/arithmetic.aspx">Within the date input control, do not allow users to input arithmetic shortcuts relating to time</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Arithmetic shortcuts not supported at all</span>
         </div>
-        <div class="cui-rule">
+        <div class="cui-rule warning">
             <span class="cui-ref">D+Tc-0042</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/defaults.aspx">When displaying a default input within the free text input box, provide the user with an example of date with either a non-specific value (such as the input mask) or a date appropriate to the clinical context (for example, 'today's date')</a>
-            <span class="highlight">Mandatory</span>
+            <span class="highlight">Recommended</span>
+            <span class="rule-not-met">HTML5 support may vary by browser</span>
         </div>
         <div class="cui-rule error">
             <span class="cui-ref">D+Tc-0046</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/Freetext/editing.aspx">Within the date input control, allow users to select the entire value to facilitate rapid editing or entry of arithmetic shortcuts relating to date (only)</a>
             <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Arithmetic shortcuts not supported at all</span>
         </div>
-   
+
     </div>
 </div>
 <hr />
@@ -157,17 +193,17 @@
                 </legend>
                 <div class="form-group form-group-compound">
                     <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
-                        <input id="radio-indent-1" type="radio" name="radio-indent-group" value="Yes">
+                        <input id="radio-date-1" type="radio" name="radio-indent-group" value="Yes">
                         Yes
                     </label>
                     <label class="block-label" for="radio-indent-2">
-                        <input id="radio-indent-2" type="radio" name="radio-indent-group" value="No">
+                        <input id="radio-date-2" type="radio" name="radio-indent-group" value="No">
                         No
                     </label>
                 </div>
-                <div class="panel-indent js-hidden" id="example-ni-no">
+                <div class="panel-indent js-hidden" id="example-date">
                     <label class="form-label" for="national-insurance">Date</label>
-                    <input class="form-control" type="date" id="national-insurance">
+                    <input class="form-control" type="date" id="date">
                 </div>
             </fieldset>
         </form>
@@ -183,17 +219,17 @@
                         </legend>
                         <div class="form-group form-group-compound">
                             <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
-                                <input id="radio-indent-1" type="radio" name="radio-indent-group" value="Yes">
+                                <input id="radio-date-1" type="radio" name="radio-indent-group" value="Yes">
                                 Yes
                             </label>
                             <label class="block-label" for="radio-indent-2">
-                                <input id="radio-indent-2" type="radio" name="radio-indent-group" value="No">
+                                <input id="radio-date-2" type="radio" name="radio-indent-group" value="No">
                                 No
                             </label>
                         </div>
-                        <div class="panel-indent js-hidden" id="example-ni-no">
+                        <div class="panel-indent js-hidden" id="example-date">
                             <label class="form-label" for="national-insurance">Date</label>
-                            <input class="form-control" type="date" id="national-insurance">
+                            <input class="form-control" type="date" id="date">
                         </div>
                     </fieldset>
                 </form>
@@ -202,7 +238,7 @@
 
     </div>
     <div class="column-half">
-        <div class="cui-rule warning">
+        <div class="cui-rule">
             <span class="cui-ref">D+Tc-0008</span>
             <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Date/freetext.aspx">Allow the input of 'Unknown' (or similar) to specify dates not known to the user</a>
             <span class="highlight">Mandatory</span>
@@ -218,12 +254,12 @@
             <div class="form-group">
                 <label for="date">
                     <span class="form-label-bold">Time</span>
-                    <span class="form-hint">Enter a time</span>
+                    <span class="form-hint">Enter a time (24hr format, e.g. 13:05)</span>
                 </label>
                 <input type="time" name="time" class="form-control" value="@date.ToString("yyyy-MM-dd")"/>
                 <label class="form-checkbox" for="checkbox-approx-time">
                     <input id="checkbox-approx-time" type="checkbox" value="isApproximate">
-                    Time is approximate
+                    Approx
                 </label>
             </div>
         </form>
@@ -234,12 +270,12 @@
                     <div class="form-group">
                         <label for="date">
                             <span class="form-label-bold">Time</span>
-                            <span class="form-hint">Enter a time</span>
+                            <span class="form-hint">Enter a time (24hr format, e.g. 13:05)</span>
                         </label>
-                        <input type="time" name="time" class="form-control" value="@date.ToString("yyyy-MM-dd")" />
+                        <input type="time" name="time" class="form-control" value="@date.ToString("yyyy-MM-dd")"/>
                         <label class="form-checkbox" for="checkbox-approx-time">
                             <input id="checkbox-approx-time" type="checkbox" value="isApproximate">
-                            Time is approximate
+                            Approx
                         </label>
                     </div>
                 </form>
@@ -250,12 +286,139 @@
     <div class="column-half">
         <div class="cui-rule">
             <span class="cui-ref">D+Tc-0020</span>
-            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/inputbox.aspx">Adopt the guidance provided in Design Guidance - Time Display for the format of any dates displayed within the time input contro</a>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/inputbox.aspx">Adopt the guidance provided in Design Guidance - Time Display for the format of any dates displayed within the time input control</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tc-0021</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/displayformat.aspx">Use the 24-hour clock only (rather than the 12-hour clock)</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tc-0022</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/inputbox.aspx">Use an 'Approx' check box to allow the user to indicate an approximate time</a>
             <span class="highlight">Mandatory</span>
         </div>
         <div class="cui-rule warning">
-            <span class="cui-ref">D+Tc-0022</span>
-            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/inputbox.aspx">Use an 'Approx' check box to allow the user to indicate an approximate time</a>
+            <span class="cui-ref">D+Tc-0023</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/editing.aspx">Allow the time elements to be individually edited (hours, minutes and seconds)</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Hours and minutes met, but seconds are not supported by the HTML5 time input element</span>
+        </div>
+        <div class="cui-rule warning">
+            <span class="cui-ref">D+Tc-0024</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/instructions.aspx">Provide access to instructions on how to use the control, for example, via the use of tooltips. The instructions must contain details of different time types that can be entered</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Information can be provided through a text hint. Tooltips are inappropriate for touch interfaces</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tc-0025</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/arithmetic.aspx">Allow users to enter arithmetic shortcuts such as '+3h' for three hours later and '-2m' for two minutes earlier. The relevant operators are as illustrated</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not be supported by the HTML5 time input element</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tc-0027</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/defaults.aspx">Display a default input within the time input control</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule warning">
+            <span class="cui-ref">D+Tc-0028</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/editing.aspx">Increase/decrease the whole time by the least significant time unit if the entire value is selected or if no unit is selected</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Spinner controls may not be supported on all platforms by the HTML5 time input element</span>
+        </div>
+        <div class="cui-rule warning">
+            <span class="cui-ref">D+Tc-0029</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/editing.aspx">Provide the ability to spin individual time units when selected</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Spinner controls may not be supported on all platforms by the HTML5 time input element</span>
+        </div>
+        <div class="cui-rule warning">
+            <span class="cui-ref">D+Tc-0043</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/instructions.aspx">Provide indication to the user that the 24-hour clock is in use</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Information can be provided through a text hint. Tooltips are inappropriate for touch interfaces</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tc-0044</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/arithmetic.aspx">Within the time input control do not allow users to input arithmetic shortcuts relating to date</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not be supported by the HTML5 time input element</span>
+        </div>
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tc-0045</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/defaults.aspx">When displaying a default input within the free text input box, provide the user with an example of time with either a non-specific value (such as the input mask) or a time appropriate to the clinical context</a>
+            <span class="highlight">Mandatory</span>
+        </div>
+        <div class="cui-rule error">
+            <span class="cui-ref">D+Tc-0047</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/arithmetic.aspx">Within the time input control, allow users to select the entire value to facilitate rapid editing or entry of arithmetic shortcuts relating to time (only)</a>
+            <span class="highlight">Mandatory</span>
+            <span class="rule-not-met">Not be supported by the HTML5 time input element</span>
+        </div>
+    </div>
+</div>
+<hr />
+<div class="grid-row">
+    <div class="column-half">
+        <form>
+            <fieldset class="inline">
+                <legend>
+                    <span class="form-label">
+                        Do you know the time?
+                    </span>
+                </legend>
+                <div class="form-group form-group-compound">
+                    <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
+                        <input id="radio-time-1" type="radio" name="radio-indent-group" value="Yes">
+                        Yes
+                    </label>
+                    <label class="block-label" for="radio-indent-2">
+                        <input id="radio-time-2" type="radio" name="radio-indent-group" value="No">
+                        No
+                    </label>
+                </div>
+                <div class="panel-indent js-hidden" id="example-time">
+                    <label class="form-label" for="national-insurance">Time</label>
+                    <input class="form-control" type="time" id="time">
+                </div>
+            </fieldset>
+        </form>
+
+        <div class="form-group">
+            <asp-prettify>
+                <form>
+                    <fieldset class="inline">
+                        <legend>
+                            <span class="form-label">
+                                Do you know the time?
+                            </span>
+                        </legend>
+                        <div class="form-group form-group-compound">
+                            <label class="block-label" data-target="example-ni-no" for="radio-indent-1">
+                                <input id="radio-time-1" type="radio" name="radio-indent-group" value="Yes">
+                                Yes
+                            </label>
+                            <label class="block-label" for="radio-indent-2">
+                                <input id="radio-time-2" type="radio" name="radio-indent-group" value="No">
+                                No
+                            </label>
+                        </div>
+                        <div class="panel-indent js-hidden" id="example-time">
+                            <label class="form-label" for="national-insurance">Time</label>
+                            <input class="form-control" type="time" id="time">
+                        </div>
+                    </fieldset>
+                </form>
+            </asp-prettify>
+        </div>
+
+    </div>
+    <div class="column-half">
+        <div class="cui-rule">
+            <span class="cui-ref">D+Tc-0026</span>
+            <a href="http://www.mscui.net/DesignGuide/QuickGuides/DateTimeInput/Time/unknown.aspx">Allow the entry of 'Unknown' (or similar) to specify times not known to the user</a>
             <span class="highlight">Mandatory</span>
         </div>
     </div>

@@ -7,6 +7,19 @@ using baymax.Models;
 
 namespace baymax.Controllers
 {
+    public class PrototypeController : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        public IActionResult GetStarted()
+        {
+            return View();
+        }
+    }
+
     public class HomeController : Controller
     {
         public IActionResult Index()
