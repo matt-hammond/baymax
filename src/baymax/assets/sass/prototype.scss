@@ -1,0 +1,53 @@
+﻿
+// From static -> static.scss ***********************************************
+// Forms
+@import "../../submodules/govuk_elements/public/sass/elements/forms";
+
+// Tables
+@import "../../submodules/govuk_elements/public/sass/elements/tables";
+
+// Buttons
+@import "../../submodules/govuk_elements/public/sass/elements/buttons";
+
+// Details
+@import "../../submodules/govuk_elements/public/sass/elements/details";
+
+// Lists
+@import "../../submodules/govuk_elements/public/sass/elements/lists";
+
+// Panels
+@import "../../submodules/govuk_elements/public/sass/elements/panels";
+
+// Icons
+@import "../../submodules/govuk_elements/public/sass/elements/icons";
+
+// From static -> static.scss ***********************************************
+/* govuk_frontend_toolkit includes */
+@import "../../submodules/static/app/assets/stylesheets/header-footer-only";
+
+@import "shims";
+@import "design-patterns/buttons";
+
+/* local styleguide includes */
+@import "../../submodules/static/app/assets/stylesheets/styleguide/conditionals2";
+
+/* styles */
+@import "../../submodules/static/app/assets/stylesheets/helpers/buttons";
+@import "../../submodules/static/app/assets/stylesheets/helpers/core";
+@import "../../submodules/static/app/assets/stylesheets/helpers/footer";
+@import "../../submodules/static/app/assets/stylesheets/helpers/header";
+@import "../../submodules/static/app/assets/stylesheets/helpers/multi-step";
+@import "../../submodules/static/app/assets/stylesheets/helpers/notifications";
+@import "../../submodules/static/app/assets/stylesheets/helpers/organisations";
+@import "../../submodules/static/app/assets/stylesheets/helpers/publisher";
+@import "../../submodules/static/app/assets/stylesheets/helpers/text";
+
+@import "../../submodules/static/app/assets/stylesheets/static-pages/error-pages";
+
+@import "../../submodules/static/app/assets/stylesheets/govuk-component/component";
+
+// From templates -> gov_template.scss ***********************************************
+@import "../../submodules/govuk_template/source/assets/stylesheets/styleguide/colours";
+@import "../../submodules/govuk_template/source/assets/stylesheets/accessibility";
+@import "../../submodules/govuk_template/source/assets/stylesheets/header";
+@import "../../submodules/govuk_template/source/assets/stylesheets/footer";
